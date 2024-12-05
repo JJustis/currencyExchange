@@ -1,4 +1,4 @@
-// Create the widget container div and form
+// widget.js
 const widgetContainer = document.createElement('div');
 widgetContainer.id = 'virtual-currency-widget';
 widgetContainer.innerHTML = `
@@ -103,7 +103,12 @@ document.getElementById('currency-purchase-form').addEventListener('submit', fun
     paypalForm.method = 'post';
     paypalForm.action = 'https://www.sandbox.paypal.com/cgi-bin/webscr';
     
-    // PayPal form fields
+    // PayPal form fields with all necessary parameters included in the return URL
+    const returnUrl = new URL('http://betahut.bounceme.net/widgets/purchaseCurrency/success.php');
+    returnUrl.searchParams.append('custom', username);
+    returnUrl.searchParams.append('item_number', `EXP_${expAmount}`);
+    returnUrl.searchParams.append('amount', price);
+
     const formFields = {
         cmd: '_xclick',
         business: 'Vikerus1@gmail.com',
@@ -111,10 +116,12 @@ document.getElementById('currency-purchase-form').addEventListener('submit', fun
         item_number: `EXP_${expAmount}`,
         amount: price,
         currency_code: 'USD',
-        return: 'https://betahut.bounceme.net/paypalipnhowto/success.php',
-        cancel_return: 'https://betahut.bounceme.net/paypalipnhowto/cancel.php',
-        notify_url: 'https://betahut.bounceme.net/paypalipnhowto/ipn.php',
-        custom: username
+        return: returnUrl.toString(),
+        cancel_return: 'http://betahut.bounceme.net/widgets/purchaseCurrency/cancel.php',
+        notify_url: 'http://betahut.bounceme.net/widgets/purchaseCurrency/ipn.php',
+        custom: username,
+        no_shipping: '1',
+        no_note: '1',
     };
     
     // Add hidden fields to PayPal form

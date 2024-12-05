@@ -30,9 +30,9 @@ if (PAYPAL_SANDBOX) {
 }
 
 // Set other PayPal URLs
-define('PAYPAL_RETURN_URL', 'https://betahut.bounceme.net/paypalipnhowto/success.php');
-define('PAYPAL_CANCEL_URL', 'https://betahut.bounceme.net/paypalipnhowto/cancel.php');
-define('PAYPAL_NOTIFY_URL', 'https://betahut.bounceme.net/paypalipnhowto/ipn.php');
+define('PAYPAL_RETURN_URL', 'http://jcmc.serveminecraft.net/widgets/purchaseCurrency/success.php');
+define('PAYPAL_CANCEL_URL', 'http://jcmc.serveminecraft.net/widgets/purchaseCurrency/cancel.php');
+define('PAYPAL_NOTIFY_URL', 'http://jcmc.serveminecraft.net/widgets/purchaseCurrency/ipn.php');
 
 // You may want to set these URLs dynamically based on your actual website URL
 // For example:

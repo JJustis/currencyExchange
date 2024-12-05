@@ -1,0 +1,11 @@
+[2024-12-04 13:43:04] Payment incomplete or receiver mismatch: status=Completed, email=vikerus1@gmail.com
+[2024-12-04 13:49:59] Payment incomplete or receiver mismatch: status=Completed, email=vikerus1@gmail.com
+[2024-12-04 14:07:04] --- Starting IPN Processing ---
+[2024-12-04 14:07:05] Raw POST data: mc_gross=0.05&protection_eligibility=Eligible&payer_id=CH5QMGDDKL3KQ&payment_date=05%3A06%3A54+Dec+04%2C+2024+PST&payment_status=Completed&charset=windows-1252&first_name=joshua&mc_fee=0.05&notify_version=3.9&custom=Bikerus4&payer_status=unverified&business=vikerus1%40gmail.com&quantity=1&verify_sign=AFD4pRWZTUO8-B7s6gNyIazzxFaPA6ETpZschH8Ngd9EQw5ljq-TZuny&payer_email=jandersonjustis%40gmail.com&txn_id=6CF50057TT440183R&payment_type=instant&last_name=justis&receiver_email=vikerus1%40gmail.com&payment_fee=0.05&shipping_discount=0.00&receiver_id=AJ4NS9CJY5JNN&insurance_amount=0.00&txn_type=web_accept&item_name=1000+EXP+for+Bikerus4&discount=0.00&mc_currency=USD&item_number=EXP_1000&residence_country=US&test_ipn=1&receipt_id=5314-4521-8716-9753&shipping_method=Default&transaction_subject=&payment_gross=0.05&ipn_track_id=f741359bfd457
+[2024-12-04 14:07:05] Payment Status: Completed
+[2024-12-04 14:07:05] Receiver Email: vikerus1@gmail.com
+[2024-12-04 14:07:05] Transaction ID: 6CF50057TT440183R
+[2024-12-04 14:07:05] Username: Bikerus4
+[2024-12-04 14:07:05] Item Number: EXP_1000
+[2024-12-04 14:07:05] Amount: 0.05
+[2024-12-04 14:07:05] Invalid receiver email: vikerus1@gmail.com
